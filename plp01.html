@@ -1,0 +1,281 @@
+<!-- based on this wix template: https://www.wix.com/website-template/view/html/2852?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fbusiness%2Fconsulting-coaching&tpClick=view_button&esi=ca284634-89e0-48c7-8b7d-bc94e5726dbd-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Montserrat:wght@100&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'IBM Plex Mono', monospace;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .header {
+            background-color:navy;
+            color: white;
+            display: flex;
+            flex-direction: rows;
+            position: fixed;
+            top: 0; 
+            width: 100%;
+            z-index: 6;
+        }
+        .nav-bar {
+           
+        }
+        .logo {
+            margin-left: 25px;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: rows;
+            margin-right: 0;
+            margin-left: 85%;
+            margin-top: 30px;
+            justify-content: space-between;
+            position: relative;
+            right: 0;
+            width: 100%;
+        }
+        ul a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            font-size: 15px;
+            text-align: center;
+        }
+        .growth-image {
+            position: relative;
+        }
+        .img-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .growth {
+            background-color: rgba(82, 148, 185, .75);
+            width: 50%;
+            height: 16%;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin: 30px;
+            border-radius: 25px;
+        }
+        .growth h1 {
+            font-size: 25px
+        }
+        #consultation {
+            margin: 20px;
+            background-color: rgba(82, 148, 185);
+            color: navy;
+            border-radius: 25px;
+            border: .5 solid navy;
+        }
+        .grid {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 90%;
+            background-color: aliceblue;
+        }
+        .grid button {
+            border-radius: 25px;
+            background-color: navy;
+            color: aliceblue;
+        }
+        .box {
+            padding: 25px;
+            
+            text-align: center;
+            width: 20%;
+        }
+        .contact {
+           background-color: navy;        
+        }
+        .about {
+            text-align: center;
+            color: aliceblue;
+            background-image: url(https://wallpapercave.com/wp/wp4490804.jpg);
+            min-height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form {
+            width: 50%;
+            position: relative;
+            left: 25%;
+        }
+        .questions {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .question {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    
+        input {
+            margin: 15px;
+            border: none;
+            border-bottom: .5px solid aliceblue;
+            background-color: navy;
+        }
+        label {
+            margin-top: 10px;
+            color: white;
+        }
+        #submit {
+            margin: 20px;
+            background-color: aliceblue;
+            color: navy;
+            border: .5px solid navy;
+            border-radius: 25px;
+            position: relative;
+            left: 42%;
+        }
+        .message {
+            position: relative;
+            left: 45%;
+        }
+        textarea {
+            background-color: navy;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: .5 solid aliceblue;
+            position: relative;
+            left: 23%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">JAMES CONSULTING</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#plans-pricing">Plans & Pricing</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#tools-tips">Tools & Tips</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="log-in">Log In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="grown-img">
+        <section class="img-container">
+             <img src="https://media.istockphoto.com/id/1181409720/photo/blue-ridge-mountain.jpg?b=1&s=170667a&w=0&k=20&c=nLam0llTyFtf65yInLy9-70obAGRNDvL8565QBFetqs=" width="100%" >
+        </section>
+        <section class="growth">
+             <h3>Developing Innovative Strategies</h3>
+             <h1>ACHIEVING GROWTH</h1>
+             <button id="consultation">Book A Consultation</button>
+        </section>
+    </section>
+    
+    <section clas="container"></section>
+    <br><br><br>
+    <section class="grid">
+        <div class="box" id="services">
+            <h3>SERVICES</h3>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <button>More Info</button>
+        </div>
+        <div class="box" id="projects">
+            <h3>PROJECTS</h3>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <button>More Info</button>
+        </div>
+        <div class="box" id="clients">
+            <h3>CLIENTS</h3>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <button>More Info</button>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h3>ABOUT US</h3>
+        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        <br>
+        <p>This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+    </section>
+
+    <section class="our-clients">
+
+    </section>
+
+    <section class="testimonials">
+
+    </section>
+
+    <section class="contact">
+        <form>
+            <div class="questions">
+                <div class="question" id="q1">
+                    <label for="fname">First Name</label> 
+                    <input type="text" id="fname">
+                </div>
+                <div class="question" id="q2">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname">
+                </div>
+                <div class="question" id="q3">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="question" id="q4">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject">
+                </div>
+            </div>
+            <label for="message" class="message">Message</label>
+        </br>
+            <textarea id="message" name="message" rows="2" cols="50"></textarea>
+    </br>>
+            <button id="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
